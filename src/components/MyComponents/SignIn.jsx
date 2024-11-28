@@ -119,7 +119,7 @@ const SignIn = () => {
           }}
         >
           <img
-            src="/src/assets/google-removebg-preview.png"
+            src="/google-removebg-preview.png"
             alt="Google"
             className="w-8 h-5 mr-2"
           />

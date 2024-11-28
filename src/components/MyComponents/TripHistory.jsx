@@ -31,12 +31,8 @@ export default function TripHistory() {
             onClick={() => navigate(`/trip-details/${trip.id}`)} // Navigate on click
           >
             <img
-              src={trip.destinationImage || "/src/assets/alt.png"} // Default to a placeholder if no image is available
+              src="/alt.png" // Default to a placeholder if no image is available
               alt={`Image of ${trip.destination}`}
-              onError={(e) => {
-                e.target.onerror = null; // Prevent infinite loop in case fallback fails
-                e.target.src = "/src/assets/alt.png"; // Path to the fallback image
-              }}
               className="w-full h-48 object-cover rounded-md mb-3"
             />
             <h2 className="text-xl font-semibold">{trip.destination}</h2>

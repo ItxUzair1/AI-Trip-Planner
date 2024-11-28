@@ -19,7 +19,7 @@ export default function Hero() {
             </p>
             <Button onClick={handleClick}>Get Started</Button>
             <img 
-                src="/src/assets/Designer.png" 
+                src="/Designer.png" 
                 alt="Designer" 
                 className="w-full md:w-3/4 lg:w-1/2 mt-6 h-auto max-h-[600px] object-contain" 
             />

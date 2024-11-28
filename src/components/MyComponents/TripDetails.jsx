@@ -64,12 +64,8 @@ export default function TripDetails() {
     <div className="max-w-5xl mx-auto p-4">
       {/* Hero Section */}
       <img
-        src={hotels[0]?.hotelImageUrl || "/src/assets/placeholder.jpg"} // Default to a placeholder if no image is available
+        src="/alt.png"
         alt={`Image of ${data.destination}`}
-        onError={(e) => {
-            e.target.onerror = null; // Prevent infinite loop in case fallback fails
-            e.target.src = "/src/assets/alt.png"; // Path to the fallback image
-          }}
         className="w-full h-72 object-cover"
     />
 
@@ -104,12 +100,8 @@ export default function TripDetails() {
               >
                 <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl animate-fade-in">
                   <img
-                    src={hotel.hotelImageUrl}
+                    src="/alt.png"
                     alt={`image of ${hotel.hotelName}`}
-                    onError={(e) => {
-                      e.target.onerror = null; // Prevent infinite loop in case fallback fails
-                      e.target.src = "/src/assets/alt.png"; // Path to the fallback image
-                    }}
                     className="w-full h-40 object-cover"
                   />
                   <div className="p-4">
@@ -155,12 +147,8 @@ export default function TripDetails() {
                     <div className="p-4 bg-gray-50 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
                       <div className="flex items-center space-x-4">
                         <img
-                          src={place.placeImageUrl}
+                          src="/alt.png"
                           alt={`image of ${place.placeName}`}
-                          onError={(e) => {
-                            e.target.onerror = null; // Prevent infinite loop in case fallback fails
-                            e.target.src = "/src/assets/alt.png"; // Path to the fallback image
-                          }}
                           className="w-20 h-20 rounded-md object-cover"
                         />
                         <div>
