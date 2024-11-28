@@ -5,7 +5,7 @@ import SignUp from "@/components/MyComponents/SignUp";
 import TripDetails from "@/components/MyComponents/TripDetails";
 import TripHistory from "@/components/MyComponents/TripHistory";
 import AuthLayout from "@/Layout/AuthLayout";
-import Layout from "@/Layout/layout";
+import Layout from "@/Layout/Layout";
 import { Route, createBrowserRouter, createRoutesFromElements, Outlet } from "react-router-dom";
 
 export const router = createBrowserRouter(
