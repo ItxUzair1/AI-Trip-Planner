@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { priceCategories, companyCategories, prompt } from "./Option"; // Import the price categories array
 import { Button } from "../ui/button";
 import { toast } from "react-toastify";
-import { chatSession } from "./GEmini";
+import { chatSession } from "./Gemini";
 import { useFirebase } from "@/context/firebase";
 import { useNavigate } from "react-router-dom";
 import { FaSpinner } from "react-icons/fa"; // Import the loading spinner icon
@@ -100,6 +100,7 @@ export default function CreateTrip() {
       const result = await chatSession.sendMessage(Prompt);
       const parts = result.response.candidates[0].content.parts;
       let text = parts[0].text.trim();
+      console.log(text);
       let parsedData;
   
       // Try parsing the JSON
