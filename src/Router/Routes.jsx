@@ -5,13 +5,13 @@ import SignUp from "@/components/MyComponents/SignUp";
 import TripDetails from "@/components/MyComponents/TripDetails";
 import TripHistory from "@/components/MyComponents/TripHistory";
 import AuthLayout from "@/Layout/AuthLayout";
-import Layout from "@/Layout/Layout";
+import Layout1 from "@/Layout/Layout1";
 import { Route, createBrowserRouter, createRoutesFromElements, Outlet } from "react-router-dom";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <>
-            <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Layout1 />}>
                 <Route index element={<Hero />} />
                 <Route path="create-trip" element={<CreateTrip />} />
                 <Route path="/trip-details/:id" element={<TripDetails/>}/>
